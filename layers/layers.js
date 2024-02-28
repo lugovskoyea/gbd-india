@@ -61,11 +61,11 @@ var lyr_Drilledboreholes_3 = new ol.layer.Vector({
 lyr_GoogleHybrid_0.setVisible(true);lyr_OSMStandard_1.setVisible(true);lyr_Deposits_2.setVisible(true);lyr_Drilledboreholes_3.setVisible(true);
 var layersList = [lyr_GoogleHybrid_0,lyr_OSMStandard_1,lyr_Deposits_2,lyr_Drilledboreholes_3];
 lyr_Deposits_2.set('fieldAliases', {'name': 'name', 'reg_number': 'reg_number', 'area_ha': 'area_ha', 'mineral': 'mineral', 'prj_status': 'prj_status', 'name org': 'name org', 'nam search': 'nam search', });
-lyr_Drilledboreholes_3.set('fieldAliases', {'well name': 'well name', 'dep name': 'dep name', 'drill date': 'drill date', });
+lyr_Drilledboreholes_3.set('fieldAliases', {'well name': 'well name', 'dep name': 'dep name', 'drill date': 'drill date', 'photo': 'photo', });
 lyr_Deposits_2.set('fieldImages', {'name': '', 'reg_number': '', 'area_ha': '', 'mineral': '', 'prj_status': '', 'name org': '', 'nam search': '', });
-lyr_Drilledboreholes_3.set('fieldImages', {'well name': '', 'dep name': '', 'drill date': '', });
+lyr_Drilledboreholes_3.set('fieldImages', {'well name': '', 'dep name': '', 'drill date': '', 'photo': '', });
 lyr_Deposits_2.set('fieldLabels', {'name': 'inline label - always visible', 'reg_number': 'inline label - visible with data', 'area_ha': 'inline label - always visible', 'mineral': 'inline label - always visible', 'prj_status': 'inline label - always visible', 'name org': 'inline label - always visible', 'nam search': 'inline label - always visible', });
-lyr_Drilledboreholes_3.set('fieldLabels', {'well name': 'inline label - always visible', 'dep name': 'header label - always visible', 'drill date': 'header label - visible with data', });
+lyr_Drilledboreholes_3.set('fieldLabels', {'well name': 'inline label - always visible', 'dep name': 'header label - always visible', 'drill date': 'header label - visible with data', 'photo': 'no label', });
 lyr_Drilledboreholes_3.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
